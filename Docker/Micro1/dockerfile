@@ -1,4 +1,0 @@
-FROM openjdk:11
-ADD micro1.jar micro1.jar
-EXPOSE 8082 
-ENTRYPOINT ["java","-jar","/micro1.jar"]
