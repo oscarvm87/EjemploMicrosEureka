@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+      - id: servicio1
+        uri: http://localhost:8081
+        predicates:
+        - Path=/status/**
+      - id: servicio2
+        uri: http://localhost:8082
+        predicates:
+        - Path=/status/**

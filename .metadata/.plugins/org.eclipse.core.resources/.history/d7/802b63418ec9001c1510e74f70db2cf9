@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    cloud:
+      gateway:
+        routes: 
+        - id: servicio1
+       	  uri: http://localhost:8081
+       	  predicates:
+       	 	- Path=/status/**
+        

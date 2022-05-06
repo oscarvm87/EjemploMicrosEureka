@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    cloud:
+      gateway:
+        routes: 
+      - id: employeeModule
+        uri: lb://FIRST-SERVICE
+        predicates:
+        - Path=/employee/**      

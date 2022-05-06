@@ -1,0 +1,5 @@
+package com.micros.controller;
+
+public class Status {
+
+}
